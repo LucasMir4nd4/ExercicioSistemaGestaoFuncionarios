@@ -1,0 +1,11 @@
+BEM VINDO
+Funcionario{ Nome = João Silva Categoria = CLT Salario = 3500,00 Age = 35}
+Funcionario{ Nome = Maria Oliveira Categoria = Temporario Salario = 1600,00 Age = 28}
+Funcionario{ Nome = Carlos Souza Categoria = CLT Salario = 4800,00 Age = 45}
+Funcionario{ Nome = Ana Lima Categoria = Temporario Salario = 1350,00 Age = 22}
+Funcionario{ Nome = Ricardo Alves Categoria = CLT Salario = 4100,00 Age = 38}
+Funcionario{ Nome = Patrícia Ramos Categoria = Temporario Salario = 1530,00 Age = 31}
+Funcionario{ Nome = Bruno Costa Categoria = CLT Salario = 4950,00 Age = 40}
+Funcionario{ Nome = Juliana Mendes Categoria = Temporario Salario = 1750,00 Age = 26}
+Funcionario{ Nome = Felipe Martins Categoria = CLT Salario = 3500,00 Age = 33}
+Funcionario{ Nome = Larissa Teixeira Categoria = Temporario Salario = 2090,00 Age = 29}
