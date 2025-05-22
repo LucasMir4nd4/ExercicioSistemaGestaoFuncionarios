@@ -4,10 +4,7 @@ import entities.Categoria;
 import entities.Funcionario;
 import entities.FuncionarioCLT;
 import entities.FuncionarioTemporario;
-
-import javax.security.auth.kerberos.KerberosKey;
 import java.io.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,18 +24,18 @@ public class Main {
                 int idade = Integer.parseInt(campos[1]);
                 Categoria categoria = Categoria.valueOf(campos[2]);
 
-                if (categoria.equals(Categoria.CLT)){
-                    double salarioBase = Double.parseDouble(campos[3]);
-                    double bonusMensal = Double.parseDouble(campos[4]);
-                    list.add(new FuncionarioCLT(nome,idade,categoria,salarioBase, bonusMensal));
-                }
-                else if (categoria.equals(Categoria.Temporario)) {
-                    int diasTrabalhados = Integer.parseInt(campos[5]);
-                    double valorDia = Double.parseDouble(campos[6]);
-                    list.add(new FuncionarioTemporario(nome, idade, categoria,diasTrabalhados, valorDia));
-                }
-                else {
-                    System.out.println("OCORREU UM ERRO NA LEITRA DO ARQUIVO");
+                switch (categoria) {
+                    case CLT -> {
+                        double salarioBase = Double.parseDouble(campos[3]);
+                        double bonusMensal = Double.parseDouble(campos[4]);
+                        list.add(new FuncionarioCLT(nome,idade,categoria,salarioBase, bonusMensal));
+                    }
+                    case Temporario -> {
+                        int diasTrabalhados = Integer.parseInt(campos[5]);
+                        double valorDia = Double.parseDouble(campos[6]);
+                        list.add(new FuncionarioTemporario(nome, idade, categoria,diasTrabalhados, valorDia));
+                    }
+                    default -> System.out.println("OCORREU UM ERRO NA LEITRA DO ARQUIVO");
                 }
 
                 line = br.readLine();
