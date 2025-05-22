@@ -47,6 +47,6 @@ public abstract class Funcionario {
                 " Categoria = "+ categoria +
                 " Salario = "+ String.format("%.2f",calcularSalario())+
                 " Age = " + idade +
-                '}'+ "COMMIT";
+                '}';
     }
 }
