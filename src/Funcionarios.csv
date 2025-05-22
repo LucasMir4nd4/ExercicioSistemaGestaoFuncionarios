@@ -1,0 +1,11 @@
+nome,idade,tipo,salarioBase,bonusMensal,diasTrabalhados,valorDia
+João Silva,35,CLT,3000.0,500.0,,
+Maria Oliveira,28,Temporario,,,20,80.0
+Carlos Souza,45,CLT,4000.0,800.0,,
+Ana Lima,22,Temporario,,,15,90.0
+Ricardo Alves,38,CLT,3500.0,600.0,,
+Patrícia Ramos,31,Temporario,,,18,85.0
+Bruno Costa,40,CLT,4200.0,750.0,,
+Juliana Mendes,26,Temporario,,,25,70.0
+Felipe Martins,33,CLT,3100.0,400.0,,
+Larissa Teixeira,29,Temporario,,,22,95.0

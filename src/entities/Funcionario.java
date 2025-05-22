@@ -1,24 +1,25 @@
 package entities;
 
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
-    private double salarioBase;
     private int idade;
+    private Categoria categoria;
 
     public Funcionario() {
     }
 
-    public Funcionario(String nome, double salarioBase, int idade){
+    public Funcionario(String nome,int idade, Categoria categoria){
         this.nome= nome;
-
+        this.idade = idade;
+        this.categoria= categoria;
     }
 
-    public double getSalarioBase() {
-        return salarioBase;
+    public Categoria getCategoria() {
+        return categoria;
     }
 
-    public void setSalarioBase(double salarioBase) {
-        this.salarioBase = salarioBase;
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 
     public String getNome() {
@@ -35,5 +36,17 @@ public class Funcionario {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public abstract double calcularSalario();
+
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                " Nome = " + nome +
+                " Categoria = "+ categoria +
+                " Salario = "+ String.format("%.2f",calcularSalario())+
+                " Age = " + idade +
+                '}';
     }
 }
