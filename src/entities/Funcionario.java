@@ -8,7 +8,10 @@ public class Funcionario {
     public Funcionario() {
     }
 
+    public Funcionario(String nome, double salarioBase, int idade){
+        this.nome= nome;
 
+    }
 
     public double getSalarioBase() {
         return salarioBase;
